@@ -29,7 +29,7 @@ body {
 }
 
 #navbar a:hover {
-  border-top: 1em solid black;
+  border-top: .25em solid black;
 }
 
 #splash {
