@@ -1,126 +1,101 @@
 <html>
   <head>
     <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="navbar">
-      <a class="selected" href="./index.html">HOME</a>
-      <a href="./index.html">INFO</a>
-      <a href="./index.html">TEAM</a>
-    </div> <!--navbar-->
-    <div id="splash">
-      <svg id="splash-svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMax meet"
-        xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(0,10)"> <!-- background -->
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(-75,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(-55,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(-35,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(-15,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(5,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(25,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(45,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(65,50,100)"
-            fill="#D71A21"/>
-          <polygon
-            points="50,100 50,-100, 10,-100"
-            transform="rotate(85,50,100)"
-            fill="#D71A21"/>
-        </g>
-        <g transform="translate(21,20)"> <!-- logo -->
-          <g> <!-- cloud outline -->
-            <circle cx="10" cy="22" r="10"/>
-            <circle cx="20" cy="17" r="10"/>
-            <circle cx="30" cy="10" r="10"/>
-            <circle cx="40" cy="17" r="10"/>
-            <circle cx="48" cy="22" r="10"/>
-            <rect x="10" y="12" height="20" width="38"/>
-          </g>
-          <g fill="white"> <!-- cloud -->
-            <circle cx="10" cy="22" r="9"/>
-            <circle cx="20" cy="17" r="9"/>
-            <circle cx="30" cy="10" r="9"/>
-            <circle cx="40" cy="17" r="9"/>
-            <circle cx="48" cy="22" r="9"/>
-            <rect x="10" y="16" height="15" width="38"/>
-          </g>
-          <g transform="translate(19,17)"> <!-- link -->
-            <g> <!-- link black -->
-              <circle cx="5" cy="5" r="5"/>
-              <circle cx="15" cy="5" r="5"/>
-              <rect x="5" y="0" height="10" width="10"/>
-            </g>
-            <g> <!-- link infill -->
-              <rect x="5" y="0" height="10" width="10"/>
-            </g>
-            <g fill="white"> <!-- link infill white -->
-              <rect x="8" y="-1" height="12" width="4"/>
-              <rect x="5" y="2" height="6" width="10"/>
-            </g>
-            <g fill="white"> <!-- link white -->
-              <circle cx="5" cy="5" r="3"/>
-              <circle cx="15" cy="5" r="3"/>
-            </g>
-            <g> <!-- link center -->
-              <circle cx="8" cy="5" r="1"/>
-              <circle cx="12" cy="5" r="1"/>
-              <rect x="8" y="4" height="2" width="4"/>
-            </g>
-          </g>
-          <text
-            x="0" y="50"
-            font-family="Alfa Slab One"
-            font-size="19.5">BLOX</text>
-          <text
-            x="0" y="55"
-            font-family="Alfa Slab One"
-            font-size="3">BLOCKCHAIN BASED DATA BACKUP</text>
-        </g>
-      </svg>
-    </div> <!--splash-->
-    <div id="section-one">
-      <div class="h1">MANIFESTO</div>
-      <p>Data should be a lot of things, and data means different things to different people. With blox, we are starting out by focusing on data in the form of files since this liberates the largest amount of data. We believe all of your files should adhere to the following four tenants:</p>
-      <div class="h2">Data should be <div class="stress">PERSISTENT</div></div>
-      <p class="summary">Once a file is saved, you should have a strong guarantee that it is safe. Irrespective of hardware failure, your file should be able to be recovered in the future.</p>
-      <div class="h2">Data should be <div class="stress">VERSIONED</div></div>
-      <p class="summary">Files change over time, and often those changes hold more information than the file itself. You should have access to the historical copies of your files, not just the latest version.</p>
-      <div class="h2">Data should be <div class="stress">INDEPENDENT</div></div>
-      <p class="summary">No matter what device you save your file to, you should be able to access it from anywhere. This means data traverses device boundaries, it no longer matters if you are using your smartphone or laptop to work on that document. As long as it was saved, every device has access to it.</p>
-      <div class="h2">Data should be <div class="stress">PRIVATE</div></div>
-      <p class="summary">Nobody should be able to access your data without explicit permission from you, no matter who they are.</p>
-      <div class="h1">SECONDARY GOALS</div>
-      <p>The above four tenants are the primary objectives of this project. There are two additional tenants that we believe are important, but take a backseat to the primary objectives in every trade-off discussion.</p>
-      <div class="h2">Data should be <div class="stress">COLLABORATIVE</div></div>
-      <p class="summary">Files are meant to be worked on together, a medium for co-creation.</p>
-      <div class="h2">Data should be <div class="stress">SHAREABLE</div></div>
-      <p class="summary">Very few files are meant for a single pair of eyes. Files should be able to be sent to others directly from your storage, without needing to upload them to a middle-man service in-between. Files should be able to be shared with others no matter how large they are.</p>
+    <div class="logo">
+      <img src="./sitting-on-cloud.svg">
+      <div class="text">your cloud</div>
     </div>
+    <hr>
+    <div class="pricing-title">
+      Plans
     </div>
+    <div class="pricing">
+      <div class="column">
+        <div class="column-border">
+          <div class="title">Standard</div>
+          <div class="price">$10</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-border">
+          <div class="title">Premium</div>
+          <div class="price">$30</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-border">
+          <div class="title">Self Hosted</div>
+          <div class="price">FREE</div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-subtitle">
+      per 100GB billed monthly
+    </div>
+    <div class="features">
+      With your cloud, files are:
+      <div class="list">
+        <table>
+          <tr id="heading-1">
+            <td><i class="fas fa-angle-down"></i></td>
+            <td><i class="fas fa-lock"></i></td>
+            <td>Private</td>
+          </tr>
+          <tr id="description-1">
+            <td></td>
+            <td></td>
+            <td>
+              Built with state-of-the-art encryption. Nobody can access the
+              files in your cloud other than you, no matter who they are.
+            </td>
+          </tr>
+          <tr id="heading-2">
+            <td><i class="fas fa-angle-down"></i></td>
+            <td><i class="fas fa-history"></i></td>
+            <td>Versioned</td>
+          </tr>
+          <tr id="description-2">
+            <td></td>
+            <td></td>
+            <td>
+              your cloud keeps track of how files change overtime, allowing you
+              to view and restore historical copies.
+            </td>
+          </tr>
+          <tr id="heading-3">
+            <td><i class="fas fa-angle-down"></i></td>
+            <td><i class="fas fa-copy"></i></td>
+            <td>Persistant</td>
+          </tr>
+          <tr id="description-3">
+            <td></td>
+            <td></td>
+            <td>Persistant means that your files stay around. With your cloud, files are synced as soon as a backup location is available. This means your cloud is automatically protecting your data against your computer failing.</td>
+          </tr>
+          <tr id="heading-4">
+            <td><i class="fas fa-angle-down"></i></td>
+            <td><i class="fas fa-mobile-alt"></i></td>
+            <td>Independent</td>
+          </tr>
+          <tr id="description-4">
+            <td></td>
+            <td></td>
+            <td>With your cloud, your files are independent of the devices that create them. It doesn't matter where you author a file, on your phone or your laptop, as soon as the file is synced to a backup location it will be available across all of your devices.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+    <script>
+      for(var i=1; i <= 4; i++) {
+        var elem = document.getElementById('heading-'+i);
+        elem.onclick = collapse.bind(null, i);
+        collapse(i);
+      }
+    </script>
   </body>
 </html>
